@@ -12,7 +12,60 @@
         </div>
         <div class="information-right">
             <div class="eligibility-box">
-                <img class="eligibility-image" src="assets/img/Group 6.svg" alt="eligibility-calculator-img">
+                <div class="eligibility-calculator-left">
+                        <div class="heading-text">
+                            <p>Eligibility Calculator</p>
+                        </div>  
+                        <div class="slidecontainer">
+                            <p>Monthly Income</p>
+                            <br>
+                            <p class="income-number">&#8377; <span id="income"></span></p>
+                            <input type="range" min="100000" max="300000" value="1" class="slider1" id="myRange1">
+                            <div class="ranges container">
+                                <p>&#8377; 100000</p>
+                                <p>&#8377; 300000</p>
+                            </div>
+                        </div>
+                
+                        <div class="slidecontainer">
+                            <p>Monthly Expense</p>
+                            <br>
+                            <p class="expense-number">&#8377; <span id="expense"></span></p>
+                            <input type="range" min="10000" max="100000" value="1" class="slider2" id="myRange2">
+                        </div>
+                        <div class="repayment-tenure">
+                            <p>Repayment tenure</p>
+                            <br>
+                            <select name="tenure" id="tenure">
+                                <option value="3 Months">3 Months</option>
+                                <option value="6 Months">6 Months</option>
+                                <option value="9 Months">9 Months</option>
+                                <option value="12 Months">12 Months</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="existing-loans container">
+                            <p>Do you have any existing loans?</p>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="emi">
+                            <p>EMI of existing loan (optional)</p>
+                            <br>
+                            <input type="text" name="emi" id="emi" placeholder="&#8377; 1500">
+                        </div>
+                    </div> 
+                    <div class="eligibility-calculator-right">
+                        <p>Loan Amount</p>
+                        <p class="loan-number">&#8377; 100000</p>
+                        <br>
+                        <p>Your EMI will be</p>
+                        <p class="emi-number">&#8377; 15000</p>
+                        <br>
+                        <p class="calculator-button">Get Money</p>
+                    </div>
             </div>
         </div>
     </div>    
